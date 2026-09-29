@@ -1,8 +1,9 @@
-function somarElementos(vetor){
+function somarElementos(vetor) {
     let somaTotal = 0;
-    vetor.forEach(element => {
-        somaTotal += element
-    })
+    
+    for (let numero of vetor) {
+        somaTotal += numero;
+    }
 
-    return somaTotal
+    return somaTotal;
 }

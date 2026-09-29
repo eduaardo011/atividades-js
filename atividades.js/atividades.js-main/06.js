@@ -1,10 +1,14 @@
 const pessoa = {
     nome: prompt("Digite seu nome:"),
-    idade: prompt("Digita sua idade:"),
+    idade: Number(prompt("Digite sua idade:")), // Convertido para número por boa prática
     profissao: prompt("Digite sua profissão:")
+};
+
+function formatarPessoa(objPessoa) {
+    // Usando template string para organizar a frase com crases e ${}
+    let mensagem = `Olá, meu nome é ${objPessoa.nome}, tenho ${objPessoa.idade} anos e trabalho como${objPessoa.profissao}.`;
+    
+    return alert(mensagem);
 }
 
-function formatarPessoa(pessoa) {
-    return alert("Olá, meu nome é " + pessoa.nome + ", tenho " + pessoa.idade + " anos trabalho como " + pessoa.profissao)
-}
-formatarPessoa(pessoa)
+formatarPessoa(pessoa);

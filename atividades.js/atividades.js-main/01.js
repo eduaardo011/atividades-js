@@ -1,9 +1,10 @@
-
-
-function  calcularAreaRetangulo() {
-    let base= Number(prompt("Digite o valor da base:"))
-    let altura= Number(prompt("Digite o valor da altura:"))
-    let area= base*altura
-    return alert ("A area do retangulo é: "+ area)
+function calcularArea(base, altura) {
+    return base * altura;
 }
- calcularAreaRetangulo()
+
+// Exemplo de uso:
+let baseUsuario = Number(prompt("Digite o valor da base:"));
+let alturaUsuario = Number(prompt("Digite o valor da altura:"));
+
+let areaTotal = calcularArea(baseUsuario, alturaUsuario);
+alert(`A área do retângulo é: ${areaTotal}`);
